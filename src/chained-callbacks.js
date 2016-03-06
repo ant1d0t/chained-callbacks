@@ -27,8 +27,8 @@ function d(next) {
 let fns = [a,b,c,d];
 
 // chain function will call the supplied function
-// and recursively call the chain method with the
-// the next eleemnt in the array
+// and recursively call the chain function with the
+// the next element in the array
 function chain(fn) {
   if(fn) {
     fn(() => chain(fns.shift()));
